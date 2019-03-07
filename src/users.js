@@ -8,7 +8,18 @@ class User {
 	}
 
 	render() {
-		return `<li data-id=${this.id} id="list-user">${this.name}</li>`
+		return `
+		<div class="container">
+			<div data-id=${this.id} id="list-user" class="card" style="height: 250px; width: 250px;">${this.name}
+				<br>
+				<br>
+				<p>${this.location}</p>
+				<br>
+				<br>
+				<button data-id="${this.id}">View Profile</button>
+			</div>
+		</div>	
+		`
 	}
 
 	// renderDetails() {

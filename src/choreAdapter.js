@@ -4,8 +4,17 @@ class ChoreAdapter {
 		.then(resp => resp.json())
 	}
 
+	// static createChore() {
+	// 	return fetch('http://localhost:3000/chores/' + foundChore.id, {
+	// 		method: 'POST',
+	// 		headers: {
+				
+	// 		}
+	// 	})
+	// }
+
 	static patchChore(foundChore) {
-		return fetch('http://localhost:3000/chores/' + foundBeer.id, {
+		return fetch('http://localhost:3000/chores/' + foundChore.id, {
 			method: 'PATCH',
 			headers: {
 				'Content-Type': 'application/json'

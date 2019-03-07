@@ -3,13 +3,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
     <title>Get it Done!</title>
   </head>
   <body>
   	<h1>Get It Done!</h1>
-	
-	<div>
+<div id="content-container">
+	<!-- <div>
 		<form id="form-add-chore" style="">
 			<h4>What do you need help with?</h4>
 			<input type="text" name="name" value="" placeholder="My first & last name..." class="input-text">
@@ -20,8 +22,7 @@
 			<input type="text" name="details" value="" placeholder="The deets..." class="input-text">
 		</form>
 		<button id="new-chore-btn">Add Chore</button>
-	</div>
-
+	</div> -->
 
     <div id='chore-container'>
     	<h2 id="chore-header">Chores</h2>
@@ -35,12 +36,15 @@
 	</div>
 
 	<div id="user-container">
-		<h2>People and Places</h2>
-		<ul id="users-list">
+		<div id="users-list">
 			
-		</ul>
+		</div>
 	</div>
-
+</div>
+    <script src="src/chores.js" charset="utf-8"></script>
+    <script src="src/choreAdapter.js" charset="utf-8"></script>
+    <script src="src/users.js" charset="utf-8"></script>
+    <script src="src/userAdapter.js" charset="utf-8"></script>
     <script src="src/index.js" charset="utf-8"></script>
   </body>
 </html>
